@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="MainActivity"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="end"
+        android:text=""
+        android:outlineSpotShadowColor="#574E4E"
+        android:textSize="24sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resultTextView"
+        android:layout_marginTop="74dp">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:onClick="onNumberClick"
+                android:text="1"
+                android:backgroundTint="#3E3D3D"
+                app:cornerRadius="@dimen/cardview_default_elevation" />
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:onClick="onNumberClick"
+                android:backgroundTint="#3E3D3D"
+                android:text="2"
+                app:cornerRadius="@dimen/cardview_default_elevation" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:onClick="onNumberClick"
+                android:backgroundTint="#3E3D3D"
+                android:text="3"
+                app:cornerRadius="@dimen/cardview_default_elevation" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:onClick="onOperatorClick"
+                android:backgroundTint="#3E3D3D"
+                android:text="+"
+                app:cornerRadius="@dimen/cardview_default_elevation" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout1"
+            android:layout_gravity="start"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:onClick="onNumberClick"
+                android:backgroundTint="#3E3D3D"
+                android:text="4"
+                app:cornerRadius="@dimen/cardview_default_elevation" />
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:onClick="onNumberClick"
+                android:backgroundTint="#3E3D3D"
+                android:text="5"
+                app:cornerRadius="@dimen/cardview_default_elevation" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:onClick="onNumberClick"
+                android:backgroundTint="#3E3D3D"
+                android:text="6"
+                app:cornerRadius="@dimen/cardview_default_elevation" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:onClick="onOperatorClick"
+                android:backgroundTint="#3E3D3D"
+                android:text="-"
+                app:cornerRadius="@dimen/cardview_default_elevation" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout2"
+            android:layout_gravity="start"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#3E3D3D"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:onClick="onNumberClick"
+                android:backgroundTint="#3E3D3D"
+                android:text="7"
+                app:cornerRadius="@dimen/cardview_default_elevation" />
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:onClick="onNumberClick"
+                android:backgroundTint="#3E3D3D"
+                android:text="8"
+                app:cornerRadius="@dimen/cardview_default_elevation" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:backgroundTint="#3E3D3D"
+                android:onClick="onNumberClick"
+                android:text="9"
+                app:cornerRadius="@dimen/cardview_default_elevation" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:onClick="onOperatorClick"
+                android:backgroundTint="#3E3D3D"
+                android:text="/"
+                app:cornerRadius="@dimen/cardview_default_elevation" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout3"
+            android:layout_gravity="start"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:onClick="onNumberClick"
+                android:backgroundTint="#3E3D3D"
+                android:text="."
+                app:cornerRadius="@dimen/cardview_default_elevation" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:onClick="onNumberClick"
+                android:backgroundTint="#3E3D3D"
+                android:text="0"
+                app:cornerRadius="@dimen/cardview_default_elevation" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:onClick="onClearClick"
+                android:backgroundTint="#3E3D3D"
+                android:text="C"
+                app:cornerRadius="@dimen/cardview_default_elevation" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:onClick="onOperatorClick"
+                android:backgroundTint="#3E3D3D"
+                android:text="*"
+                app:cornerRadius="@dimen/cardview_default_elevation" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout4"
+            android:onClick="onEqualClick"
+            android:backgroundTint="#3E3D3D"
+            android:text="="
+            app:cornerRadius="@dimen/cardview_default_elevation" />
+    </RelativeLayout>
+</RelativeLayout>
