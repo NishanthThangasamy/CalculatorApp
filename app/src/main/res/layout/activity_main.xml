@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="MainActivity"
     android:padding="5dp">
-// changes
+<!--// changes-->
     <TextView
         android:id="@+id/resultTextView"
         android:layout_width="match_parent"
